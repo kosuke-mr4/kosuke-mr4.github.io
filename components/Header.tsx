@@ -3,7 +3,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header className="sticky top-0 border-b z-10 bg-white">
-      <div className="max-w-4xl mx-auto flex justify-between items-center h-12">
+      <div className="max-w-4xl mx-auto flex justify-between items-center h-12 px-4 sm:px-6 md:px-8">
         <Link href="/">kosuke-mr4.github.io</Link>
         <div>
           <Link href="/">About</Link>

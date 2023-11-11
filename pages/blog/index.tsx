@@ -27,8 +27,8 @@ export const getStaticProps = () => {
 
 export default function Blog({ sortedPosts }: { sortedPosts: any[] }) {
   return (
-    <div className="my-8">
-      <div className="grid grid-cols-3 gap-4">
+    <div className="my-8 px-4 sm:px-6 md:px-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {sortedPosts.map((post) => (
           <PostCard key={post.slug} post={post} />
         ))}
