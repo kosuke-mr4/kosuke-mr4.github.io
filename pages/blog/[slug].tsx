@@ -29,17 +29,19 @@ renderer.image = (href: string, title: string, text: string) => {
 
 const Post = ({ frontMatter, content }: any) => {
   return (
-    <div className="prose prose-lg max-w-none">
+    <div className="prose prose-lg max-w-none px-8 sm:px-6 md:px-8">
       <div className="border">
         <img
-        className="w-full"
+          className="w-full"
           src={`/${frontMatter.image}`}
           // width={1200}
           // height={600}
           alt={frontMatter.title}
         />
       </div>
-      <h1 className="mt-12">{frontMatter.title}</h1>
+      <h1 className="mt-12 text-4xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl">
+        {frontMatter.title}
+      </h1>
       <span>{frontMatter.date}</span>
       <div
         dangerouslySetInnerHTML={{ __html: marked(content, { renderer }) }}
