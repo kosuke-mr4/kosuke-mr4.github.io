@@ -5,7 +5,7 @@ const PostCard = ({ post }: any) => {
     <Link href={`/blog/${post.slug}`}>
       <div className="border rounded-lg md:block flex">
         <img
-          className="md:w-full w-1/2" // あ〜デフォで小さいやつ書いてオプションででかい方を指定するのね〜
+          className="md:w-full w-1/2 rounded-lg" // あ〜デフォで小さいやつ書いてオプションででかい方を指定するのね〜
           src={`/${post.frontMatter.image}`}
           alt={post.frontMatter.title}
         />
