@@ -3,7 +3,7 @@ export default function Home() {
     <div className="mx-auto p-8 sm:px-6 md:px-8">
       <div>
         <img
-          src="/genbaneko.jpeg"
+          src="/images/genbaneko.jpeg"
           className="rounded-xl md:mx-0 mx-auto w-64"
         />
       </div>
